@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *, html{
+      padding: 0;
+      margin: 0;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+      background-color: black;
+    }
+    
+    .main-div{
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      background-color: white;
+      margin: 30px;
+      /* padding-right: 20px; */
+    }
+    .box1{
+      background-color: blue;
+      color: white;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      /* margin: 20px; */
+    }
+    .circle1{
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: rgba(0, 140, 255, 0.39);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 26px;
+    }
+    .summary{
+      display: flex;
+      padding: 16px;
+      justify-content: space-between;
+
+
+    }
+    .box2{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      padding: 16px;
+      align-items: center;
+      gap: 15px;
+      margin: 10px;
+      margin-top: 0;
+    }
+    
+    .box2-1{
+      border: 1px solid  rgba(216, 112, 133, 0.212);
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      background-color: rgba(216, 112, 133, 0.212);
+    }
+    .reaction{
+      gap: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .reactcolor{
+      color:rgb(216, 112, 133);
+    }
+    .box2-2{
+      display: flex;
+      flex-direction: row;
+      border: 1px solid rgba(255, 166, 0, 0.125) ;
+      border-radius: 10px;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+      background-color: rgba(255, 166, 0, 0.125);
+    }
+    .memory{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .memocolor{
+      color: orange;
+    }
+    .score{
+      display: flex;
+      gap: 4px;
+    }
+    .box2-3{
+      border: 1px solid  rgba(0, 128, 117, 0.092);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+      background-color: rgba(0, 128, 117, 0.092);
+    }
+    .verbal{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .vercolor{
+      color: rgb(0, 128, 117);
+    }
+    .box2-4{
+      border: 1px solid rgba(0, 0, 255, 0.075);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px;
+      width: 100%;
+      background-color: rgba(0, 0, 255, 0.075);
+    }
+    .visual{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .viscolor{
+      color: blue;
+    }
+    .box2-5{
+      background-color: rgba(0, 0, 0, 0.67);
+      color: white;
+      border-radius: 30px;
+      width: 100%;
+      padding: 16px;
+    }
+    .number{
+      color: rgba(0, 0, 0, 0.375);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main-div">
+    <div class="box1">
+      <span>Your Result</span>
+      <div class="circle1">
+        <h1>76</h1>
+        <p>of 100</p>
+      </div>
+      <h3>Great</h3>
+      <span> You scored higher than 65% of the people who have taken these tests.</span>
+    </div>
+
+    <div class="summary">
+      <p>Summary</p>
+    </div>
+    <div class="box2">
+
+      <div class="box2-1">
+        <div class="reaction">
+          <img src="./assets/images/icon-reaction.svg" alt="">
+          <span class="reactcolor">Reaction</span>
+        </div>
+        <div class="score">
+          <span>80</span>
+          <span class="number">/</span>
+          <span class="number">100</span>
+        </div>
+      </div>
+      <div class="box2-2">
+        <div class="memory"> 
+          <img src="./assets/images/icon-memory.svg" alt="">
+          <span class="memocolor">Memory</span>
+        </div>
+        <div class="score">
+          <span>92</span>
+          <span class="number">/</span>
+          <span class="number">100</span>
+        </div>
+      </div>
+
+      <div class="box2-3">
+        <div class="verbal">
+          <img src="/assets/images/icon-verbal.svg" alt="">
+          <span class="vercolor">Verbal</span>
+        </div>
+        <div class="score">
+          <span>61</span>
+          <span class="number">/</span>
+          <span class="number">100</span>
+        </div>
+      </div>
+
+      <div class="box2-4">
+        <div class="visual">
+          <img src="/assets/images/icon-visual.svg" alt="">
+          <span class="viscolor">Visual</span>
+        </div>
+        <div class="score">
+          <span>72</span>
+          <span class="number">/</span>
+          <span class="number">100</span>
+        </div>
+      </div>
+      <div class="box2-5">
+        <span>Continue</span>
+      </div>
+    </div>
+    
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Emokowbb</a>.
+  </div>
+</body>
+</html>
